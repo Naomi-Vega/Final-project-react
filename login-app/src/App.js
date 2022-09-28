@@ -3,12 +3,14 @@ import { FaUserAlt, FaEnvelope, FaLock } from "react-icons/fa";
 import Users from "./users";
 import SignUp from './signup';
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
+import React, { Component }  from 'react';
 
 function App() {
   return (
-
-    <SignUp />
-
+    <>
+      <SignUp />
+    
+    </>
   );
 }
 

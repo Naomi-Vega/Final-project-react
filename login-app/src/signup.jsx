@@ -1,12 +1,15 @@
 import { FaUserAlt, FaEnvelope, FaLock } from "react-icons/fa";
 import {useState} from "react"
+import React, { Component }  from 'react';
+
 
 function SignUp() {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    console.log("Hello")
+    
+   
     return (
         <>
         <div className="container">
@@ -19,7 +22,7 @@ function SignUp() {
         <form className="login-section" onSubmit={(e)=> {
             e.preventDefault()
            // console.log(firstName, lastName, email, password)
-            console.log("Hello")
+            console.log("Hola")
             var user = {
                 firstName, lastName, email, password
             }
