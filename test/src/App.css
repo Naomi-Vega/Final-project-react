@@ -71,13 +71,15 @@ button {
 }
 
 .user-item {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
   transition: 0.3s;
-  padding: 20px;
-  max-width: 300px;
+  padding: 10px;
+  max-width: 400px;
   margin: 20px auto;
 }
 
@@ -85,6 +87,17 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.918);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.774);;
+}
+
+.icon-item {
+  font-size: 110px;
+  color: rgb(13, 187, 120);
+  padding: 5px 0 0 10px;
+}
+
+.info-item {
+  width: 100%;
+  margin-left: 30px;
 }
 
 .cards h1 {

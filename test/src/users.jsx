@@ -13,20 +13,25 @@ function Users() {
     }, [])
     return (
         <div className='cards'>
-            <h1>Users Signed Up <FaAddressCard /></h1>
+            <h1>Users Signed Up </h1>
             {users.map((user, i) => {
                 return (
-                    
+
                     <div key={i} className="user-item">
-                        <p>
-                           First Name: {user.firstName}
-                        </p>
-                        <p>
-                          Last Name: {user.lastName}
-                        </p>
-                        <p>
-                          Email: {user.email}
-                        </p>
+                        <div className='icon-item'>
+                            <FaAddressCard />
+                        </div>
+                        <div className='info-item'>
+                            <p>
+                                <strong>First Name:</strong> {user.firstName}
+                            </p>
+                            <p>
+                                <strong>Last Name:</strong> {user.lastName}
+                            </p>
+                            <p>
+                                <strong>Email:</strong> {user.email}
+                            </p>
+                        </div>
                     </div>
                 )
             })}
