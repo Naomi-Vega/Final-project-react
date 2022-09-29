@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { useState, useEffect } from "react";
+import { FaAddressCard } from "react-icons/fa";
+
 
 function Users() {
     const [users, setUsers] = useState([])
@@ -10,8 +12,8 @@ function Users() {
         setUsers(newUsers)
     }, [])
     return (
-        <div>
-            <h1>Users Signed Up</h1>
+        <div className='cards'>
+            <h1>Users Signed Up <FaAddressCard /></h1>
             {users.map((user, i) => {
                 return (
                     
